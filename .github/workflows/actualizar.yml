@@ -25,7 +25,11 @@ concurrency:
 jobs:
   actualizar:
     # Runner estándar de repositorio público; no seleccionar runners grandes.
-    runs-on: ubuntu-latest
+    runs-on: windows-2022
+    defaults:
+      run:
+        shell: bash
+    
     timeout-minutes: 50
     env:
       PYTHONUNBUFFERED: "1"
@@ -36,6 +40,11 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.13"
+
+      # Instalar soporte para los certificados del sistema.
+      - name: Preparar certificados HTTPS
+        run: python -m pip install truststore==0.10.5
+        
       - name: Comprobar reglas y descargador
         run: python -m unittest discover -p 'test_*.py'
       - name: Descargar CSV
