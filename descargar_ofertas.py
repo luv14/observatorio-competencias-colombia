@@ -1,4 +1,7 @@
 """Exportación CSV pública; TLS verificado y sustitución atómica tras validar."""
+# Usar los certificados del sistema operativo para verificar HTTPS.
+import truststore
+truststore.inject_into_ssl()
 import csv
 import json
 import os
