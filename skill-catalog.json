@@ -1,0 +1,942 @@
+[
+  {
+    "term": "Trabajo en equipo",
+    "category": "transversales",
+    "pattern": "trabajo en equipo|trabajar en equipo|trabajo colaborativo"
+  },
+  {
+    "term": "Comunicación",
+    "category": "transversales",
+    "pattern": "comunicacion (?:asertiva|efectiva)|habilidades comunicativas|habilidades de comunicacion|comunicacion oral|comunicacion escrita"
+  },
+  {
+    "term": "Liderazgo",
+    "category": "transversales",
+    "pattern": "\\bliderazgo\\b"
+  },
+  {
+    "term": "Servicio al cliente",
+    "category": "tecnicas",
+    "pattern": "servicio al cliente|atencion al cliente|servicio al usuario|atencion al usuario"
+  },
+  {
+    "term": "Ventas",
+    "category": "tecnicas",
+    "pattern": "\\bventas\\b"
+  },
+  {
+    "term": "Gestión de proyectos",
+    "category": "tecnicas",
+    "pattern": "gestion de proyectos"
+  },
+  {
+    "term": "Soldadura",
+    "category": "tecnicas",
+    "pattern": "\\bsoldadura\\b"
+  },
+  {
+    "term": "Conducción",
+    "category": "tecnicas",
+    "pattern": "licencia (?:de conduccion|[abc][123])|\\bconduccion\\b|\\bconducir\\b|\\bconduciendo\\b"
+  },
+  {
+    "term": "Contabilidad",
+    "category": "conocimientos",
+    "pattern": "\\bcontabilidad\\b"
+  },
+  {
+    "term": "Seguridad y salud en el trabajo",
+    "category": "conocimientos",
+    "pattern": "seguridad y salud en el trabajo|\\bsg-sst\\b"
+  },
+  {
+    "term": "Ciberseguridad",
+    "category": "conocimientos",
+    "pattern": "\\bciberseguridad\\b|\\bseguridad informatica\\b"
+  },
+  {
+    "term": "Logística",
+    "category": "conocimientos",
+    "pattern": "\\blogistica\\b"
+  },
+  {
+    "term": "Excel",
+    "category": "herramientas",
+    "pattern": "\\bexcel\\b"
+  },
+  {
+    "term": "Python",
+    "category": "herramientas",
+    "pattern": "\\bpython\\b"
+  },
+  {
+    "term": "SQL",
+    "category": "herramientas",
+    "pattern": "\\bsql\\b"
+  },
+  {
+    "term": "Power BI",
+    "category": "herramientas",
+    "pattern": "\\bpower\\s*bi\\b"
+  },
+  {
+    "term": "JavaScript",
+    "category": "herramientas",
+    "pattern": "\\bjavascript\\b"
+  },
+  {
+    "term": "Java",
+    "category": "herramientas",
+    "pattern": "\\bjava\\b"
+  },
+  {
+    "term": "SAP",
+    "category": "herramientas",
+    "pattern": "\\bsap\\b"
+  },
+  {
+    "term": "Linux",
+    "category": "herramientas",
+    "pattern": "\\blinux\\b"
+  },
+  {
+    "term": "AWS",
+    "category": "herramientas",
+    "pattern": "\\baws\\b"
+  },
+  {
+    "term": "Azure",
+    "category": "herramientas",
+    "pattern": "\\bazure\\b"
+  },
+  {
+    "term": "AutoCAD",
+    "category": "herramientas",
+    "pattern": "\\bautocad\\b"
+  },
+  {
+    "term": "Inglés",
+    "category": "idiomas",
+    "pattern": "\\bingles\\b|\\benglish\\b"
+  },
+  {
+    "term": "Resolución de problemas",
+    "category": "transversales",
+    "pattern": "(?<!\\w)(?:resolucion de problemas|solucion de problemas)(?!\\w)"
+  },
+  {
+    "term": "Pensamiento crítico",
+    "category": "transversales",
+    "pattern": "(?<!\\w)(?:pensamiento critico)(?!\\w)"
+  },
+  {
+    "term": "Pensamiento analítico",
+    "category": "transversales",
+    "pattern": "pensamiento analitico|capacidad analitica|habilidades analiticas|capacidad de analisis"
+  },
+  {
+    "term": "Adaptabilidad",
+    "category": "transversales",
+    "pattern": "(?<!\\w)(?:adaptabilidad|adaptacion al cambio)(?!\\w)"
+  },
+  {
+    "term": "Orientación a resultados",
+    "category": "transversales",
+    "pattern": "(?<!\\w)(?:orientacion (?:a|al logro de) resultados|orientacion al logro)(?!\\w)"
+  },
+  {
+    "term": "Organización y planificación",
+    "category": "transversales",
+    "pattern": "(?<!\\w)(?:capacidad de organizacion|organizacion y planificacion|planeacion y organizacion)(?!\\w)"
+  },
+  {
+    "term": "Gestión del tiempo",
+    "category": "transversales",
+    "pattern": "(?<!\\w)(?:gestion del tiempo|manejo del tiempo)(?!\\w)"
+  },
+  {
+    "term": "Proactividad",
+    "category": "transversales",
+    "pattern": "(?<!\\w)(?:proactividad|proactivo|proactiva)(?!\\w)"
+  },
+  {
+    "term": "Creatividad",
+    "category": "transversales",
+    "pattern": "(?<!\\w)(?:creatividad)(?!\\w)"
+  },
+  {
+    "term": "Toma de decisiones",
+    "category": "transversales",
+    "pattern": "(?<!\\w)(?:toma de decisiones)(?!\\w)"
+  },
+  {
+    "term": "Negociación",
+    "category": "transversales",
+    "pattern": "(?<!\\w)(?:habilidades de negociacion|capacidad de negociacion|negociacion con (?:clientes|proveedores))(?!\\w)"
+  },
+  {
+    "term": "Atención al detalle",
+    "category": "transversales",
+    "pattern": "atencion al detalle|orientad[oa] al detalle|orientacion al detalle|detail-oriented"
+  },
+  {
+    "term": "Inteligencia emocional",
+    "category": "transversales",
+    "pattern": "(?<!\\w)(?:inteligencia emocional)(?!\\w)"
+  },
+  {
+    "term": "Responsabilidad",
+    "category": "transversales",
+    "pattern": "(?<!\\w)(?:responsabilidad y compromiso|persona responsable)(?!\\w)"
+  },
+  {
+    "term": "Autonomía",
+    "category": "transversales",
+    "pattern": "(?<!\\w)(?:capacidad de trabajar de forma autonoma|autonomia en el trabajo)(?!\\w)"
+  },
+  {
+    "term": "Gestión de inventarios",
+    "category": "tecnicas",
+    "pattern": "gestion de inventarios?|manejo de inventarios?|control de inventarios?|apoyo en inventarios|revisar el inventario"
+  },
+  {
+    "term": "Facturación",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:facturacion)(?!\\w)"
+  },
+  {
+    "term": "Cartera y cobranza",
+    "category": "tecnicas",
+    "pattern": "gestion(?:ar)? (?:la |de )?cartera|cobro de cartera|cobranzas?|recuperacion de cartera"
+  },
+  {
+    "term": "Manejo de caja",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:manejo de caja|arqueo de caja)(?!\\w)"
+  },
+  {
+    "term": "Mantenimiento preventivo / correctivo",
+    "category": "tecnicas",
+    "pattern": "mantenimientos? preventivos?|mantenimientos? correctivos?"
+  },
+  {
+    "term": "Manipulación de alimentos",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:manipulacion de alimentos)(?!\\w)"
+  },
+  {
+    "term": "Operación de maquinaria",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:operacion de maquinaria|manejo de maquinaria)(?!\\w)"
+  },
+  {
+    "term": "Instalaciones eléctricas",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:instalaciones electricas)(?!\\w)"
+  },
+  {
+    "term": "Lectura de planos",
+    "category": "tecnicas",
+    "pattern": "lectura de planos|interpretacion de planos|interpretar planos|lectura e interpretacion de planos"
+  },
+  {
+    "term": "Programación",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:programacion de software|desarrollo de software|desarrollo web)(?!\\w)"
+  },
+  {
+    "term": "Análisis de datos",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:analisis de datos|analitica de datos)(?!\\w)"
+  },
+  {
+    "term": "Soporte técnico",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:soporte tecnico)(?!\\w)"
+  },
+  {
+    "term": "Gestión documental",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:gestion documental|archivo documental)(?!\\w)"
+  },
+  {
+    "term": "Reclutamiento y selección",
+    "category": "tecnicas",
+    "pattern": "reclutamiento y seleccion|seleccion de personal|(?:experiencia|conocimientos|manejo|procesos) (?:en |de )?reclutamiento"
+  },
+  {
+    "term": "Liquidación de nómina",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:liquidacion de nomina|manejo de nomina)(?!\\w)"
+  },
+  {
+    "term": "Control de calidad",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:control de calidad)(?!\\w)"
+  },
+  {
+    "term": "Marketing digital",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:marketing digital|mercadeo digital)(?!\\w)"
+  },
+  {
+    "term": "Redacción",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:redaccion)(?!\\w)"
+  },
+  {
+    "term": "Diseño gráfico",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:diseno grafico)(?!\\w)"
+  },
+  {
+    "term": "Primeros auxilios",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:primeros auxilios)(?!\\w)"
+  },
+  {
+    "term": "Cuidado de pacientes",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:cuidado de pacientes|atencion de pacientes)(?!\\w)"
+  },
+  {
+    "term": "Gestión de compras",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:gestion de compras|proceso de compras)(?!\\w)"
+  },
+  {
+    "term": "Capacitación",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:capacitacion de personal|formacion de personal)(?!\\w)"
+  },
+  {
+    "term": "Finanzas",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:conocimientos financieros|analisis financiero|finanzas)(?!\\w)"
+  },
+  {
+    "term": "Tributación",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:tributacion|normativa tributaria|impuestos)(?!\\w)"
+  },
+  {
+    "term": "Normas contables NIIF",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:niif|normas internacionales de informacion financiera)(?!\\w)"
+  },
+  {
+    "term": "Legislación laboral",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:legislacion laboral|normatividad laboral)(?!\\w)"
+  },
+  {
+    "term": "Gestión de calidad",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:gestion de calidad|iso 9001)(?!\\w)"
+  },
+  {
+    "term": "Gestión ambiental",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:gestion ambiental|iso 14001)(?!\\w)"
+  },
+  {
+    "term": "Redes informáticas",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:redes informaticas|redes de datos|redes de computadores)(?!\\w)"
+  },
+  {
+    "term": "Bases de datos",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:bases de datos)(?!\\w)"
+  },
+  {
+    "term": "Electricidad",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:conocimientos en electricidad|electricidad)(?!\\w)"
+  },
+  {
+    "term": "Electrónica",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:electronica)(?!\\w)"
+  },
+  {
+    "term": "Mecánica",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:mecanica)(?!\\w)"
+  },
+  {
+    "term": "Farmacología",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:farmacologia)(?!\\w)"
+  },
+  {
+    "term": "Buenas prácticas de manufactura",
+    "category": "conocimientos",
+    "pattern": "buenas practicas de manufactura|\\bbpm\\b"
+  },
+  {
+    "term": "Comercio exterior",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:comercio exterior)(?!\\w)"
+  },
+  {
+    "term": "Mercadeo",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:mercadeo|marketing)(?!\\w)"
+  },
+  {
+    "term": "Estadística",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:estadistica)(?!\\w)"
+  },
+  {
+    "term": "Pedagogía",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:pedagogia)(?!\\w)"
+  },
+  {
+    "term": "Contratación pública",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:contratacion publica|contratacion estatal)(?!\\w)"
+  },
+  {
+    "term": "Ofimática",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:ofimatica|herramientas ofimaticas|microsoft office|paquete office)(?!\\w)"
+  },
+  {
+    "term": "Word",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:microsoft word|word)(?!\\w)"
+  },
+  {
+    "term": "PowerPoint",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:powerpoint|power point)(?!\\w)"
+  },
+  {
+    "term": "Siigo",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:siigo)(?!\\w)"
+  },
+  {
+    "term": "World Office",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:world office)(?!\\w)"
+  },
+  {
+    "term": "Helisa",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:helisa)(?!\\w)"
+  },
+  {
+    "term": "Photoshop",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:photoshop)(?!\\w)"
+  },
+  {
+    "term": "Illustrator",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:illustrator)(?!\\w)"
+  },
+  {
+    "term": "Revit",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:revit)(?!\\w)"
+  },
+  {
+    "term": "SolidWorks",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:solidworks)(?!\\w)"
+  },
+  {
+    "term": "Tableau",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:tableau)(?!\\w)"
+  },
+  {
+    "term": "Git",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:git|github|gitlab)(?!\\w)"
+  },
+  {
+    "term": "Docker",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:docker)(?!\\w)"
+  },
+  {
+    "term": "React",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:react|reactjs)(?!\\w)"
+  },
+  {
+    "term": "Angular",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:angular)(?!\\w)"
+  },
+  {
+    "term": "Node.js",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:node\\.?js)(?!\\w)"
+  },
+  {
+    "term": "C++",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:c\\+\\+)(?!\\w)"
+  },
+  {
+    "term": "PHP",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:php)(?!\\w)"
+  },
+  {
+    "term": "MySQL",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:mysql)(?!\\w)"
+  },
+  {
+    "term": "PostgreSQL",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:postgresql|postgres)(?!\\w)"
+  },
+  {
+    "term": "Oracle",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:oracle)(?!\\w)"
+  },
+  {
+    "term": "CRM",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:crm)(?!\\w)"
+  },
+  {
+    "term": "ERP",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:erp)(?!\\w)"
+  },
+  {
+    "term": "ArcGIS",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:arcgis)(?!\\w)"
+  },
+  {
+    "term": "QGIS",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:qgis)(?!\\w)"
+  },
+  {
+    "term": "Francés",
+    "category": "idiomas",
+    "pattern": "(?<!\\w)(?:frances|french)(?!\\w)"
+  },
+  {
+    "term": "Portugués",
+    "category": "idiomas",
+    "pattern": "(?<!\\w)(?:portugues|portuguese)(?!\\w)"
+  },
+  {
+    "term": "Alemán",
+    "category": "idiomas",
+    "pattern": "(?<!\\w)(?:aleman|german)(?!\\w)"
+  },
+  {
+    "term": "Italiano",
+    "category": "idiomas",
+    "pattern": "(?<!\\w)(?:italiano|italian)(?!\\w)"
+  },
+  {
+    "term": "C#",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:c#|c sharp)(?!\\w)"
+  },
+  {
+    "term": "HTML",
+    "category": "herramientas",
+    "pattern": "\\bhtml5?\\b"
+  },
+  {
+    "term": "CSS",
+    "category": "herramientas",
+    "pattern": "\\bcss3?\\b"
+  },
+  {
+    "term": "Orientación al servicio",
+    "category": "transversales",
+    "pattern": "(?<!\\w)(?:orientacion al servicio|orientad[oa]s? al servicio|vocacion de servicio|actitud de servicio)(?!\\w)"
+  },
+  {
+    "term": "Trabajo bajo presión",
+    "category": "transversales",
+    "pattern": "(?<!\\w)(?:trabaj(?:ar|o) bajo presion|tolerancia a la presion)(?!\\w)"
+  },
+  {
+    "term": "Empatía",
+    "category": "transversales",
+    "pattern": "(?<!\\w)(?:empatia|empatic[oa])(?!\\w)"
+  },
+  {
+    "term": "Aprendizaje continuo",
+    "category": "transversales",
+    "pattern": "(?<!\\w)(?:aprendizaje continuo|aprendizaje permanente|capacidad de aprendizaje)(?!\\w)"
+  },
+  {
+    "term": "Gestión de conflictos",
+    "category": "transversales",
+    "pattern": "(?<!\\w)(?:manejo de conflictos|resolucion de conflictos|gestion de conflictos)(?!\\w)"
+  },
+  {
+    "term": "Picking",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:picking)(?!\\w)"
+  },
+  {
+    "term": "Packing",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:packing)(?!\\w)"
+  },
+  {
+    "term": "Cargue y descargue",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:carg(?:ue|a) y descarg(?:ue|a)|cargar y descargar)(?!\\w)"
+  },
+  {
+    "term": "Recepción y almacenamiento de mercancía",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:recepcion (?:de |y almacenamiento de )?(?:mercancia|productos|materiales)|almacenamiento de (?:mercancia|productos|materiales))(?!\\w)"
+  },
+  {
+    "term": "Empaque y etiquetado",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:empaque|empacar|etiquetado|rotulado|sellado)(?!\\w)"
+  },
+  {
+    "term": "Limpieza y desinfección",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:limpieza|desinfeccion|labores de aseo)(?!\\w)"
+  },
+  {
+    "term": "Confección",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:confeccion|fileteadora|presilladora|collarin|flatseamer)(?!\\w)"
+  },
+  {
+    "term": "Carpintería",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:carpinteria|fabricacion (?:e instalacion )?de mobiliario)(?!\\w)"
+  },
+  {
+    "term": "Tapicería",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:tapiceria|tapizado)(?!\\w)"
+  },
+  {
+    "term": "Mecanizado",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:mecanizado|torneado|fresado)(?!\\w)"
+  },
+  {
+    "term": "Metrología",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:metrologia|medicion con (?:calibrador|micrometro))(?!\\w)"
+  },
+  {
+    "term": "Construcción y acabados",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:labores de construccion|experiencia (?:en |.*?en )construccion|obra gris|obra blanca|albanileria|enchape|mamposteria)(?!\\w)"
+  },
+  {
+    "term": "Supervisión de obras",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:supervision de obras|supervisar obras|direccion de obra|interventoria de obra)(?!\\w)"
+  },
+  {
+    "term": "Toma de muestras",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:toma de muestras)(?!\\w)"
+  },
+  {
+    "term": "Dispensación de medicamentos",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:dispensacion (?:de medicamentos|ambulatoria|institucional)|despachar medicamentos)(?!\\w)"
+  },
+  {
+    "term": "Atención prehospitalaria",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:atencion prehospitalaria|soporte vital basico|soporte vital avanzado)(?!\\w)"
+  },
+  {
+    "term": "Terapia y rehabilitación",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:actividades terapeuticas|rehabilitacion|terapia ocupacional)(?!\\w)"
+  },
+  {
+    "term": "Procedimientos estéticos",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:procedimientos faciales|drenaje linfatico|masajes de (?:reduccion|relajacion))(?!\\w)"
+  },
+  {
+    "term": "Análisis fisicoquímicos",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:analisis fisicoquimicos|ensayos fisicoquimicos)(?!\\w)"
+  },
+  {
+    "term": "Gestión de reservas",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:gestion(?:ar)? (?:y actualizar correctamente |de )?(?:las )?reservas|confirmar.*?reservas)(?!\\w)"
+  },
+  {
+    "term": "Cotización y presupuestos",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:elabor(?:ar|acion de) (?:solicitudes de )?cotizaciones|elabor(?:ar|acion de) presupuestos|analizar costos)(?!\\w)"
+  },
+  {
+    "term": "Digitación",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:digitacion|digitador|digitadora)(?!\\w)"
+  },
+  {
+    "term": "Elaboración de informes",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:elabor(?:ar|acion de) informes|redactar informes|preparar informes)(?!\\w)"
+  },
+  {
+    "term": "Auditoría",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:auditoria|auditorias)(?!\\w)"
+  },
+  {
+    "term": "Litigación",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:litigacion|litigios|defensa judicial|representacion judicial)(?!\\w)"
+  },
+  {
+    "term": "Siembra y cosecha",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:siembra|cosecha)(?!\\w)"
+  },
+  {
+    "term": "Manejo de residuos",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:manejo de residuos|recoleccion de residuos|gestion de residuos)(?!\\w)"
+  },
+  {
+    "term": "Control de acceso y vigilancia",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:control de accesos?|rondas de vigilancia|curso de vigilancia|curso.*?en vigilancia|monitoreo de camaras)(?!\\w)"
+  },
+  {
+    "term": "Desposte y corte de carne",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:desposte|porcionado de carne|corte de productos carnicos)(?!\\w)"
+  },
+  {
+    "term": "Instalación de telecomunicaciones",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:instalacion.*?servicios de internet|instalacion de (?:redes|fibra optica)|cableado estructurado)(?!\\w)"
+  },
+  {
+    "term": "Automatización de procesos",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:automatizacion de procesos|automatizacion.*?actividades)(?!\\w)"
+  },
+  {
+    "term": "Prospección comercial",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:prospectar|prospeccion (?:comercial|de clientes)|captacion de clientes)(?!\\w)"
+  },
+  {
+    "term": "Fidelización de clientes",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:fidelizacion de clientes|fidelizar.*?clientes)(?!\\w)"
+  },
+  {
+    "term": "Exhibición y rotación de productos",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:planogramas|rotacion de inventari[oa]|exhibicion de productos|visibilidad de producto)(?!\\w)"
+  },
+  {
+    "term": "Mensajería y distribución",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:experiencia en mensajeria|realizar la ruta asignada|entregar y recolectar)(?!\\w)"
+  },
+  {
+    "term": "Inocuidad alimentaria",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:inocuidad|haccp)(?!\\w)"
+  },
+  {
+    "term": "Bioseguridad",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:bioseguridad)(?!\\w)"
+  },
+  {
+    "term": "Seguridad industrial",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:seguridad industrial)(?!\\w)"
+  },
+  {
+    "term": "Gestión del riesgo",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:gestion del riesgo|gestion de riesgos|riesgo de credito)(?!\\w)"
+  },
+  {
+    "term": "Normativa de salud",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:normatividad en salud|normativa de salud|sistema.*?garantia de calidad.*?salud)(?!\\w)"
+  },
+  {
+    "term": "Conservación ambiental",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:restauracion ecologica|conservacion ambiental|manejo sostenible|ecosistemas de manglar)(?!\\w)"
+  },
+  {
+    "term": "Procesos de crédito",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:colocacion de creditos|microcredito|analisis de credito)(?!\\w)"
+  },
+  {
+    "term": "Costos y presupuestos",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:costos y presupuestos|costos de (?:materiales|produccion)|costos proyectados)(?!\\w)"
+  },
+  {
+    "term": "Ortografía",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:ortografia)(?!\\w)"
+  },
+  {
+    "term": "Química",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:conocimientos.*?quimica|quimica analitica)(?!\\w)"
+  },
+  {
+    "term": "Gestión de talento humano",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:gestion del talento humano|gestion humana|administracion de personal)(?!\\w)"
+  },
+  {
+    "term": "Mejora continua",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:mejora continua)(?!\\w)"
+  },
+  {
+    "term": "Metodologías ágiles",
+    "category": "conocimientos",
+    "pattern": "(?<!\\w)(?:metodologias agiles|scrum|kanban)(?!\\w)"
+  },
+  {
+    "term": "Power Automate",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:power automate)(?!\\w)"
+  },
+  {
+    "term": "Power Apps",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:power apps)(?!\\w)"
+  },
+  {
+    "term": "SharePoint",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:sharepoint)(?!\\w)"
+  },
+  {
+    "term": "Microsoft Project",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:microsoft project|ms project)(?!\\w)"
+  },
+  {
+    "term": "Optitex",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:optitex)(?!\\w)"
+  },
+  {
+    "term": "SPSS",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:spss)(?!\\w)"
+  },
+  {
+    "term": "CNC",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:cnc)(?!\\w)"
+  },
+  {
+    "term": "Montacargas",
+    "category": "herramientas",
+    "pattern": "\\bmontacargas?\\b|\\bmontacarguistas?\\b"
+  },
+  {
+    "term": "PLC",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:plc)(?!\\w)"
+  },
+  {
+    "term": "CCTV",
+    "category": "herramientas",
+    "pattern": "(?<!\\w)(?:cctv)(?!\\w)"
+  },
+  {
+    "term": "Catalán",
+    "category": "idiomas",
+    "pattern": "(?<!\\w)(?:catalan|catal[aà])(?!\\w)"
+  },
+  {
+    "term": "Preparación de alimentos",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:preparar y cocinar|preparacion de alimentos|preparacion de menus|experiencia en cocina|gastronomia|panaderia)(?!\\w)"
+  },
+  {
+    "term": "Refrigeración",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:refrigeracion|aire acondicionado)(?!\\w)"
+  },
+  {
+    "term": "Gestión de procesos disciplinarios",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:procesos disciplinarios|expediente disciplinario)(?!\\w)"
+  },
+  {
+    "term": "Evaluación de salud visual",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:examenes de optometria|evaluaciones.*?vision|salud visual)(?!\\w)"
+  },
+  {
+    "term": "Radiología e imágenes diagnósticas",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:radiologia|imagenes diagnosticas)(?!\\w)"
+  },
+  {
+    "term": "Perforación minera",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:perforacion.*?equipos neumaticos|perforacion minera)(?!\\w)"
+  },
+  {
+    "term": "Asistencia técnica agropecuaria",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:asistencia tecnica.*?agropecuaria|extension.*?agropecuaria|transferencia de tecnologia.*?cultivos)(?!\\w)"
+  },
+  {
+    "term": "Planeación didáctica",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:planeacion didactica|planificacion didactica|planificacion de clases|planeacion de clases)(?!\\w)"
+  },
+  {
+    "term": "Evaluación del aprendizaje",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:evaluacion del aprendizaje|evaluacion de aprendizajes)(?!\\w)"
+  },
+  {
+    "term": "Cultivo y poscosecha",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:postcosecha|poscosecha|manejo de cultivos|cultivo de flores)(?!\\w)"
+  },
+  {
+    "term": "Supervisión de personal",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:manejo de personal|supervision de personal|liderando equipos|coordinar equipos)(?!\\w)"
+  },
+  {
+    "term": "Inyección y extrusión de plásticos",
+    "category": "tecnicas",
+    "pattern": "(?<!\\w)(?:extrusoras|extrusion de plasticos|inyeccion de plasticos)(?!\\w)"
+  }
+]
