@@ -1,0 +1,73 @@
+# Pipeline: pruebas → descarga → procesamiento → publicación opcional.
+# Sin evento push: cargar o editar archivos no publica automáticamente.
+name: Actualizar observatorio
+
+on:
+  workflow_dispatch:
+    inputs:
+      publicar:
+        description: "Publicar en Cloudflare después de validar los datos"
+        type: boolean
+        default: false
+  # Activar estas dos líneas después de validar la primera publicación:
+  # schedule:
+  #   - cron: '23 11 * * *' # 06:23 Colombia; puede ejecutarse con retraso
+
+# Permiso mínimo del token de GitHub; Cloudflare usa secretos independientes.
+permissions:
+  contents: read
+
+# No interrumpir una publicación en curso ni ejecutar dos al mismo tiempo.
+concurrency:
+  group: observatorio-produccion
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    # Runner estándar de repositorio público; no seleccionar runners grandes.
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    env:
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Comprobar reglas y descargador
+        run: python -m unittest discover -p 'test_*.py'
+      - name: Descargar CSV
+        run: python descargar_ofertas.py
+      - name: Procesar y validar publicación
+        run: python preparar_publicacion.py
+      - name: Resumen
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          m = json.loads(Path('public/quality.json').read_text(encoding='utf-8'))
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as f:
+              f.write(f"Fecha de corte: {m['cutoff']}\n\nRegistros: {m['clean']:,}\n\nPublicaciones únicas: {m['offers']:,}\n\nDiccionario: {m['dictionary_version']}\n")
+          PY
+      - uses: actions/setup-node@v6
+        if: github.event_name == 'schedule' || inputs.publicar
+        with:
+          node-version: "22"
+      - name: Comprobar secretos de publicación
+        if: github.event_name == 'schedule' || inputs.publicar
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          test -n "$CLOUDFLARE_API_TOKEN" || { echo 'Falta CLOUDFLARE_API_TOKEN'; exit 1; }
+          test -n "$CLOUDFLARE_ACCOUNT_ID" || { echo 'Falta CLOUDFLARE_ACCOUNT_ID'; exit 1; }
+      # Este paso solo se alcanza si todas las validaciones anteriores pasan.
+      - name: Publicar en Cloudflare Pages
+        if: github.event_name == 'schedule' || inputs.publicar
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          WRANGLER_SEND_METRICS: "false"
+        run: npx --yes wrangler@4 pages deploy public --project-name=observatorio-competencias-colombia --branch=main
